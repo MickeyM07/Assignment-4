@@ -29,7 +29,6 @@ function HeronsFormula() {
             setError("please enter a value in all text boxes");
             setArea("");
         }
-        
     }
 
     return (
