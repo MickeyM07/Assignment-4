@@ -49,8 +49,8 @@ function AmbiguousCase() {
 
     return (
         <form onSubmit={(e) => ambiguous(e)}>
-            <div class="container">
-                <div class="ambiguous-case-section">
+            <div className="container">
+                <div className="ambiguous-case-section">
                     <h1>Ambiguous case</h1>
                     <h6>Angle A:</h6>
                     <input type="number" value={angleA} onChange={(event) => { setA(event.target.value) }} required />
@@ -58,8 +58,8 @@ function AmbiguousCase() {
                     <input type="number" value={a} onChange={(event) => { setB(event.target.value) }} required />
                     <h6>Side c:</h6>
                     <input type="number" value={b} onChange={(event) => { setC(event.target.value) }} required />
-                    <h6>Triangly type:</h6>
-                    <input type="text" value={result} readonly />
+                    <h6>Triangle type:</h6>
+                    <input type="text" value={result} readOnly />
                     <h6 value={errorText}></h6>
                     <input type="submit" value="Calculate"></input>
                 </div>

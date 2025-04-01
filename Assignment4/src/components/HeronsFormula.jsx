@@ -10,6 +10,8 @@ function HeronsFormula() {
 
     function heron(e) {
         e.preventDefault();
+        const valueInRoot = (4 * a ** 2 * b ** 2 - (a ** 2 + b ** 2 - c ** 2) ** 2);
+
         if (!isNaN(a) && !isNaN(b) && !isNaN(c)) {
             if (a > 0 && b > 0 && c > 0) {
                 if (valueInRoot > 0) {
@@ -32,8 +34,8 @@ function HeronsFormula() {
 
     return (
         <form onSubmit={(e) => heron(e)}>
-            <div class="container">
-                <div class="herons-formula-section">
+            <div className="container">
+                <div className="herons-formula-section">
                     <h1>Heron's Formula</h1>
                     <h6>Side a:</h6>
                     <input type="number" value={a} onChange={(event) => { setA(event.target.value) }} required />
@@ -42,7 +44,7 @@ function HeronsFormula() {
                     <h6>Side c:</h6>
                     <input type="number" value={c} onChange={(event) => { setC(event.target.value) }} required />
                     <h6>Area:</h6>
-                    <input type="text" value={result} readonly />
+                    <input type="text" value={result} readOnly />
                     <h6 value={errorText}></h6>
                     <input type="submit" value="Calculate"></input>
                 </div>

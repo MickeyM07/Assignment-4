@@ -31,13 +31,13 @@ function NetwonsMethod() {
 
     return (
         <form onSubmit={(e) => newton(e)}>
-            <div class="container">
-                <div class="newtons-method-section">
+            <div className="container">
+                <div className="newtons-method-section">
                     <h1>Newton's Method</h1>
                     <h6>Root guess:</h6>
-                    <input type="number" value={a} onChange={(event) => { setGuess(event.target.value) }} required />
+                    <input type="number" value={g} onChange={(event) => { setGuess(event.target.value) }} required />
                     <h6>Root approximation:</h6>
-                    <input type="text" value={result} readonly />
+                    <input type="text" value={result} readOnly />
                     <h6 value={errorText}></h6>
                     <input type="submit" value="Calculate"></input>
                 </div>
