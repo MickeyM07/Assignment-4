@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './style.css';
 
-function NetwonsMethod() {
+function NewtonsMethod() {
     const [g, setGuess] = useState();
     const [result, setResult] = useState();
     const [errorText, setError] = useState();
@@ -46,4 +46,4 @@ function NetwonsMethod() {
     )
 }
 
-export default NetwonsMethod;
+export default NewtonsMethod;
